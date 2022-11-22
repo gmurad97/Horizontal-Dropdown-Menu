@@ -1,0 +1,114 @@
+body{
+    margin: 0px auto;
+    padding: 0px;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(100deg, #861345, #3c7c64, #1639a2);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Times New Roman", serif;
+}
+
+i{
+    margin-bottom: 5px;
+}
+
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    min-width: 888px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 0px 0px 20px 20px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4px;
+    margin-left: 36px;
+}
+
+.horizontal-menu{
+    margin-right: 50px;
+}
+
+.horizontal-menu > ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.horizontal-menu > ul > li{
+    margin-right: 36px;
+    padding: 8px 0px;
+}
+
+.horizontal-menu > ul > li > a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #6E6E6E;
+    padding: 1px 5px;
+    border-bottom: 3px solid #6D266E;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.horizontal-menu > ul > li > a:hover{
+    color: #C8C8C8;
+    border-bottom: 3px solid #B03EB2;
+}
+
+.dropdown-vertical-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0px;
+    position: absolute;
+    top: 60px;
+    right: 240px;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.dropdown-vertical-menu > li{
+    padding: 1px 0px;
+}
+
+.dropdown-vertical-menu > li > a{
+    display: flex;
+    align-items: center;
+    color: #6E6E6E;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+    padding: 10px;
+    border-left: 3px solid #6D266E;
+    font-size: 16px;
+    transition: 0.5s;
+}
+
+.dropdown-vertical-menu > li > a:hover{
+    color: #C8C8C8;
+    border-left: 3px solid #B03EB2;
+}
+
+
+
+.horizontal-menu li:hover .dropdown-vertical-menu{
+    opacity: 1;
+    z-index: 0;
+}
